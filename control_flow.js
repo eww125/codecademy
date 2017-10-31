@@ -1,7 +1,6 @@
 // if statements
 let userName = 'Evan';
 let knowsJavaScript = true;
-
 if (knowsJavaScript && userName) {
   console.log('Great, ' + userName + '! Get ready to practice your JavaScript!');
 } else if (knowsJavaScript) {
@@ -12,9 +11,7 @@ if (knowsJavaScript && userName) {
   console.log('Great! Get ready to learn something new!');
 }
 
-
-
-
+// example 2
 let isSoccerFan = false;
 if (isSoccerFan === true) {
     console.log('Goal!');
@@ -22,10 +19,7 @@ if (isSoccerFan === true) {
     console.log('No goal!');
 }
 
-
-
-
-
+// example 3
 let wordCount = 1;
 if (wordCount) {
   console.log("Great! You've started your work!");
@@ -34,6 +28,16 @@ if (wordCount) {
 }
 let favoritePhrase = 'Love that';
 if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+
+// ! and truthiness/falsiness
+let favoritePhrase = 'Love that';
+
+if (!favoritePhrase) {
   console.log("This string doesn't seem to be empty.");
 } else {
   console.log('This string is definitely empty.');
