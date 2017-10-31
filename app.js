@@ -1,6 +1,5 @@
 # javascript_notes
 
-
 // Log Codecademy in all uppercase letters
 console.log('Codecademy'.toUpperCase()); 
 
