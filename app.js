@@ -21,3 +21,6 @@ console.log('    Remove whitespace   '.trim());
 
 // string.proto methods
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype
+
+//libraries
+console.log(Math.random()); // random number between 0 and 1
