@@ -74,3 +74,10 @@ entree = 'Tacos';
 let changeMe = true;
 changeMe = false;
 console.log(changeMe);
+
+// Undefined
+let notDefined;
+console.log(notDefined);
+
+let valueless
+console.log(valueless);
