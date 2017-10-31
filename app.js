@@ -101,3 +101,9 @@ assay++
 // String interpolation
 let favoriteAnimal = 'Pewt';
 console.log('My favorite animal: ' + favoriteAnimal);
+
+
+// String interpolation II
+let myName = 'Evan';
+let myCity = 'Dublin';
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`)
