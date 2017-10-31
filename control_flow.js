@@ -11,3 +11,13 @@ if (knowsJavaScript && userName) {
 } else {
   console.log('Great! Get ready to learn something new!');
 }
+
+
+
+
+let isSoccerFan = false;
+if (isSoccerFan === true) {
+    console.log('Goal!');
+} else {
+    console.log('No goal!');
+}
