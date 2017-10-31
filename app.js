@@ -62,7 +62,7 @@ console.log(location);
 console.log(latitude);
 console.log(inNorthernHemisphere);
 
-// Can't over-write constant variable
+// Can't over-write const variable
 const entree = 'Enchiladas';
 const price = 12;
 console.log(entree);
@@ -70,4 +70,7 @@ console.log(price);
 
 entree = 'Tacos';
 
-
+// Can over-write let variable
+let changeMe = true;
+changeMe = false;
+console.log(changeMe);
