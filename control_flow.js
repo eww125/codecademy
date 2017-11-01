@@ -43,10 +43,18 @@ if (!favoritePhrase) {
   console.log('This string is definitely empty.');
 }
 
-// comparison operator
+// comparison operators
 let hungerLevel = 10
 if (hungerLevel > 7) {
     console.log('Time to eat!');
 } else {
     console.log('We can eat later!');
+}
+
+// comparison operators 2
+let moonPhase = 'full'
+if (moonPhase === 'full') {
+    console.log('Howl!');
+} else {
+    console.log('I swear I am not a werewolf.');
 }
