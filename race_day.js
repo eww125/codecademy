@@ -1,9 +1,15 @@
-let registeredEarly = Math.round(Math.random())
-console.log(registeredEarly)
+let runnersAge = 17
+console.log(`runnersAge= ${runnersAge}`)
 
-const runnersAge = 45
+let registeredEarly = Math.round(Math.random()) // 1 = early, 0 = same day
+console.log(`registeredEarly = ${registeredEarly}`)
 
 let raceNumber = Math.floor(Math.random()*1000);
-console.log(raceNumber)
+if (registeredEarly == 0) {
+  raceNumber+=1000
+}
+console.log(`raceNumber = ${raceNumber}`)
 
-registeredEarly == '1' ? console.log('early') : console.log('same day');
+if ((runnersAge > 18) && (registeredEarly == 1)) {
+  console.log('Race at 9:30am')
+}
