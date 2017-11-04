@@ -1,19 +1,16 @@
-userChoice = 'rock'
-console.log(`userChoice = ${userChoice}`)
+//userChoice = 'scissors'
+//console.log(`userChoice = ${userChoice}`)
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
     return userInput
 } else {
   console.log('Invalid input'); }
 }
 
 function getComputerChoice() {
-  // generate and print random number
   let randomNumber = Math.floor(Math.random() * 3)
-  console.log(`randomNumber = ${randomNumber}`)
-  // convert 0/1/2 into rock/paper/scissors
   if (randomNumber===0) {
     return 'rock'
 } else if (randomNumber===1) {
@@ -23,10 +20,12 @@ function getComputerChoice() {
   }
 }
 
-computerChoice = getComputerChoice()
-
 function determineWinner(userChoice, computerChoice) {
+  console.log('determineWinner')
   console.log(userChoice, computerChoice)
+  if (userChoice === 'bomb') {
+    return 'User wins!'
+  }
   if (userChoice === computerChoice) {
     return 'The game was a tie'
   }
@@ -37,14 +36,33 @@ function determineWinner(userChoice, computerChoice) {
     else {
       return 'The computer won'
     }
+  }
+  if (userChoice === 'paper') {
+    if (computerChoice === 'rock') {
+      return 'The user won'
+    }
+    else {
+      return 'The computer won'
     }
   }
-
-  //if (UserChoice = 'rock') {
-  //  if (computerChoice = 'scissors') {
-    //  return console.log('rock crushes scissors')
-    //}
-  //}
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'paper') {
+      return 'The user won'
+    }
+    else {
+      return 'The computer won'
+    }
+  }
 }
 
-determineWinner(userChoice, computerChoice)
+//console.log(determineWinner(userChoice, computerChoice))
+
+function playGame() {
+  console.log('playGame')
+  let userChoice = getUserChoice('bomb')
+  let computerChoice = getComputerChoice()
+  console.log(userChoice, computerChoice)
+  console.log(determineWinner(userChoice, computerChoice))
+}
+
+playGame()
