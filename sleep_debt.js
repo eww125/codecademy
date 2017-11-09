@@ -26,3 +26,13 @@ function getSleepHours(day) {
 var getActualSleepHours = () => {
   return getSleepHours(monday) + getSleepHours(tuesday) + getSleepHours(wednesday) + getSleepHours(thursday) + getSleepHours(friday) + getSleepHours(saturday) + getSleepHours(sunday)
 }
+
+function getIdealSleepHours() {
+  var idealHours = 8
+  return idealHours * 7
+}
+
+function calculateSleepDebt() {
+  actualSleepHours = getActualSleepHours()
+  idealSleepHours = getIdealSleepHours()
+}
